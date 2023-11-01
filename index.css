@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.section-1 {
+  padding: 50px 100px;
+}
+.section-1 .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+.section-1 .text span {
+  margin-left: 50px;
+  color: rgb(255, 60, 0);
+  position: relative;
+}
+.section-1 .text span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  width: 50%;
+  height: 2px;
+  background: rgb(255, 60, 0);
+}
+.section-1 .text h1 {
+  font-size: 35px;
+  width: 40%;
+}
+.section-1 .slider {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  gap: 10px;
+  overflow: hidden;
+}
+.section-1 .slider .slide {
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.section-1 .slider .slide .image {
+  width: 100%;
+}
+.section-1 .slider .slide .image img {
+  width: 100%;
+}
+.section-1 .slider .slide .about {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: -180px;
+  left: 0;
+  background: rgb(255, 60, 0);
+  color: #fff;
+  padding: 25px 10px;
+  transition: all 0.5s ease;
+}
+.section-1 .slider .slide:hover .about {
+  bottom: 0;
+}
+.section-1 .slider .slide::after {
+  content: "$22";
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 18px;
+  background: rgb(255, 60, 0);
+}
+
+.section-2 {
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.section-2 .left {
+  width: 50%;
+}
+.section-2 .left .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+.section-2 .left .text span {
+  margin-left: 50px;
+  color: rgb(255, 60, 0);
+  position: relative;
+}
+.section-2 .left .text span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+  width: 50%;
+  height: 2px;
+  background: rgb(255, 60, 0);
+}
+.section-2 .left .text h1 {
+  font-size: 35px;
+}
+.section-2 .left p {
+  width: 80%;
+}
+.section-2 .right {
+  width: 50%;
+  position: relative;
+}
+.section-2 .right img {
+  width: 100%;
+}
+.section-2 .right i {
+  position: absolute;
+  color: #ffffff;
+  background: rgb(255, 60, 0);
+  padding: 20px;
+  border-radius: 999px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.section-3 {
+  padding: 50px 100px;
+  background: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.section-3 .left {
+  width: 50%;
+}
+.section-3 .left .text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+.section-3 .left .text span {
+  margin-left: 50px;
+  color: #fff;
+  position: relative;
+}
+.section-3 .left .text span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -55px;
+  width: 50%;
+  height: 2px;
+  background: #fff;
+}
+.section-3 .left .text h1 {
+  font-size: 35px;
+  color: #fff;
+}
+.section-3 .left p {
+  color: #fff;
+}
+.section-3 .left .cards {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.section-3 .left .cards .card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  background: #fff;
+  padding: 30px 10px;
+}
+.section-3 .left .cards .card i {
+  position: absolute;
+  color: #fff;
+  background: rgb(255, 60, 0);
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 999px;
+  left: 50%;
+  transform: translate(-50%);
+  top: -20px;
+}
+.section-3 .right {
+  width: 50%;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-3 .right .input-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.section-3 .right .input-box input {
+  width: 100%;
+  border: solid 1px gray;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: none;
+}
+.section-3 .right .input-box input:focus {
+  border: solid 1px rgb(255, 60, 0);
+}
+.section-3 .right textarea {
+  width: 100%;
+  border: solid 1px gray;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: none;
+  resize: vertical;
+}
+.section-3 .right textarea:focus {
+  border: solid 1px rgb(255, 60, 0);
+}
+.section-3 .right button {
+  width: 100%;
+  background: rgb(255, 60, 0);
+  padding: 10px 0;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 991px) {
+  .section-1 .slider {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-3 {
+    flex-direction: column;
+  }
+  .section-3 .left {
+    width: 100%;
+  }
+  .section-3 .left .cards {
+    flex-direction: column;
+  }
+  .section-3 .left .cards .card {
+    width: 100%;
+  }
+  .section-3 .right {
+    width: 100%;
+  }
+  .section-3 .right .input-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .section-2 {
+    flex-direction: column;
+  }
+  .section-2 .left {
+    width: 100%;
+  }
+  .section-2 .right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=index.css.map */
